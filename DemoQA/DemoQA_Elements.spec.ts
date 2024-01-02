@@ -8,4 +8,15 @@ test.beforeEach(async({page}) => {
 ////Text Box
 
 //Verify the output after clicking con Submit button => Display the output below
+test ('@Text_Box', async ({page}) => {
+    await page.locator('//input[@id="userName"]').fill("Nguyen Van A")
+    //await page.locator('//input[@id="userEmail"]').fill("A@gmail.com")
+    await page.locator('//button[@id="submit"]').click()
+    expect ('//div[@id="output"]').toContain('//p[@id="name"]')
+})
+
+
+
+
+
 
