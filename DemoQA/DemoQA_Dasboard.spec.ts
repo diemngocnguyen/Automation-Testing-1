@@ -7,7 +7,7 @@ import { beforeEach } from 'node:test'
 test ('@Header', async ({page}) => {
     await page.goto('https://demoqa.com/')
     
-})}
+})
 
 
 
