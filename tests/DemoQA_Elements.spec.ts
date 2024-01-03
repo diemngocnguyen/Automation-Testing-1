@@ -88,8 +88,7 @@ test ('@Check the output when checking Yes option', async ({page}) => {
     await page.locator('//span[contains(text(),"Radio Button")]').click()
     await Yesoption.check({force: true})
     await expect (await page.locator('//p[@class="mt-3"] ')).toContainText("You have selected Yes")
-    await Impressiveoption.check({force: true})
-    await expect (await page.locator('//p[@class="mt-3"] ')).toContainText("You have selected Impressive")
+   
 });
 
 //3. Check the output when checking Impressive option
